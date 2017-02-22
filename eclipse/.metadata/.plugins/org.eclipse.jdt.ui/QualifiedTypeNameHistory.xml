@@ -31,7 +31,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="fr.poudlardrp.mod.init.BlocksMod"/>
@@ -41,4 +40,5 @@
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher"/>
 <fullyQualifiedTypeName name="fr.poudlardrp.mod.References"/>
 <fullyQualifiedTypeName name="fr.poudlardrp.mod.tileentity.TileEntityDetraqueur"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 </qualifiedTypeNameHistroy>
