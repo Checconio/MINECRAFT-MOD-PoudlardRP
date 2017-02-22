@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.proxy.CommonProxy"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.network.NetworkRegistry"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Instance"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.Container"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.container.ContainerConnectionMod"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.gui.GuiConnectionMod"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
+<fullyQualifiedTypeName name="net.java.games.input.Keyboard"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.init.EventsMod"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.entity.EntityJoinWorldEvent"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.PoudlardRP"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.handler.GuiHandlerMod"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.entity.player.PlayerEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.INSTANCEOF"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.init.ItemsMod"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.entity.player.PlayerSleepInBedEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.init.BlocksMod"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.model.AdvancedModelLoader"/>
+<fullyQualifiedTypeName name="com.pottercraft.mod.Reference"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.References"/>
+<fullyQualifiedTypeName name="fr.poudlardrp.mod.tileentity.TileEntityDetraqueur"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "poudlardrp",
+  "name": "Poudlard RP",
+  "description": "Mod du serveur Poudlard RP",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://poudlardrp.fr/",
+  "updateUrl": "",
+  "authorList": ["checconio"],
+  "credits": "",
+  "logoFile": "poudlardrp.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

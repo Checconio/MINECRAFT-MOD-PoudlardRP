@@ -1,0 +1,22 @@
+package fr.poudlardrp.mod.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.poudlardrp.mod.References;
+import fr.poudlardrp.mod.blocks.BlockMod;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlocksMod
+{
+    public static Block detraqueur, voiture;
+    
+    public static void init()
+    {
+        detraqueur = new BlockMod(Material.rock).setBlockName("detraqueur").setBlockTextureName(References.MOD_ID + ":detraqueur");
+    }
+    
+    public static void register()
+    {
+        GameRegistry.registerBlock(detraqueur, detraqueur.getUnlocalizedName().substring(5));
+    }
+}

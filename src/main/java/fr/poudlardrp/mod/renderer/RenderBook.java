@@ -1,0 +1,41 @@
+package fr.poudlardrp.mod.renderer;
+
+import org.lwjgl.opengl.GL11;
+
+import fr.poudlardrp.mod.References;
+import fr.poudlardrp.mod.tileentity.TileEntityBook;
+import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.AdvancedModelLoader;
+import net.minecraftforge.client.model.IModelCustom;
+
+public class RenderBook extends TileEntitySpecialRenderer
+{
+    ResourceLocation texture = new ResourceLocation(References.MOD_ID, "obj/book.png");
+    ResourceLocation objModelLocation = new ResourceLocation(References.MOD_ID, "obj/book.obj");
+    IModelCustom model = AdvancedModelLoader.loadModel(objModelLocation);
+    
+    public RenderBook()
+    {
+        this.func_147497_a(TileEntityRendererDispatcher.instance);
+    }
+    
+    @Override
+    public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float partialRenderTick)
+    {
+        this.RenderDetraqueurAt((TileEntityBook)tile, x, y, z, partialRenderTick);
+    }
+
+    private void RenderDetraqueurAt(TileEntityBook tile, double x, double y, double z, float partialRenderTick)
+    {
+        GL11.glPushMatrix();
+        GL11.glTranslated(x + 2.0D, y, z + 1.0D);
+        GL11.glRotatef(0.0F, 0.0F, 0.0F, 0.0F);
+        GL11.glScalef(0.1F, 0.1F, 0.1F);
+        this.bindTexture(texture);
+        model.renderAll();
+        GL11.glPopMatrix();
+    }
+}

@@ -1,0 +1,40 @@
+package com.pottercraft.mod.tileentity;
+
+import org.lwjgl.opengl.GL11;
+
+import com.pottercraft.mod.Reference;
+
+import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.AdvancedModelLoader;
+import net.minecraftforge.client.model.IModelCustom;
+
+public class TileEntityGoldenEggSpecialRenderer extends TileEntitySpecialRenderer
+{    
+    ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "detraqueur.png");
+    ResourceLocation objModelLocation = new ResourceLocation(Reference.MOD_ID, "detraqueur.obj");
+    IModelCustom model = AdvancedModelLoader.loadModel(objModelLocation);
+
+    public TileEntityGoldenEggSpecialRenderer()
+    {
+        this.func_147497_a(TileEntityRendererDispatcher.instance);
+    }
+    
+    @Override
+    public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float partialRenderTick)
+    {
+        this.renderTileEntityGoldenEggAt((TileEntityGoldenEgg)tile, x, y, z, partialRenderTick);
+    }
+
+    private void renderTileEntityGoldenEggAt(TileEntityGoldenEgg tile, double x, double y, double z, float partialRenderTick)
+    {
+        GL11.glPushMatrix();
+        GL11.glTranslated(x + 0.5D, y + 1.5D, z + 0.5D);
+        GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
+        this.bindTexture(texture);
+        model.renderAll();
+        GL11.glPopMatrix();
+    }
+}

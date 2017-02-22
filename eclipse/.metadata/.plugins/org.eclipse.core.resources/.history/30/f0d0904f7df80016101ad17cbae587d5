@@ -1,0 +1,36 @@
+package fr.poudlardrp.mod.renderer;
+
+import org.lwjgl.opengl.GL11;
+
+import fr.poudlardrp.mod.References;
+import fr.poudlardrp.mod.tileentity.TileEntityDetraqueur;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.AdvancedModelLoader;
+import net.minecraftforge.client.model.IModelCustom;
+
+public class RenderDetraqueur extends TileEntitySpecialRenderer
+{
+    ResourceLocation texture = new ResourceLocation(References.MOD_ID, "obj/detraqueur.png");
+    ResourceLocation objModelLocation = new ResourceLocation(References.MOD_ID, "obj/detraqueur.obj");
+    IModelCustom model = AdvancedModelLoader.loadModel(objModelLocation);
+    
+    @Override
+    public void renderTileEntityAt(TileEntity p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
+    {
+        TileEntityDetraqueur te2 = (TileEntityDetraqueur) p_147500_1_;
+        float rotation = te2.rotation + (p_147500_8_ / 2F);
+        float scale = te2.scale;
+        
+        bindTexture(texture);
+        GL11.glPushMatrix();
+        GL11.glTranslated(p_147500_2_ + 0.5, p_147500_4_ + 0.5, p_147500_6_ + 0.5);
+        GL11.glScalef(scale, scale, scale);
+        GL11.glPushMatrix();
+        GL11.glRotatef(rotation, 0F, 1F, 0.5F);
+        model.renderAll();
+        GL11.glPopMatrix();
+        GL11.glPopMatrix();
+    }
+}

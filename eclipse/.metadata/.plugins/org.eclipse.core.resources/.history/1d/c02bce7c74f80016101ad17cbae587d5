@@ -1,0 +1,8 @@
+package fr.poudlardrp.mod.tileentity;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityDetraqueur extends TileEntity
+{
+
+}

@@ -1,0 +1,13 @@
+package fr.poudlardrp.mod.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import fr.poudlardrp.mod.References;
+import fr.poudlardrp.mod.tileentity.TileEntityDetraqueur;
+
+public class TileEntityMod
+{
+    public static void init()
+    {
+        GameRegistry.registerTileEntity(TileEntityDetraqueur.class, References.MOD_ID + ":tileDetraqueur");
+    }
+}

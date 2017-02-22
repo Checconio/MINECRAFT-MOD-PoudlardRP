@@ -1,0 +1,6 @@
+package fr.poudlardrp.mod.tileentity;
+
+public class TileEntityBook
+{
+
+}
